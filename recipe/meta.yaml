@@ -1,7 +1,6 @@
 {% set version = '0.4.0' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-fossil
@@ -14,8 +13,7 @@ source:
   sha256: 37c082fa15ebae89db99d6071b2bb2cad6a97a0405e9b4ef77f62a8f6ad274c1
 
 build:
-  merge_build_host: True  # [win]  
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
